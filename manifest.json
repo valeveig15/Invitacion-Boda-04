@@ -1,0 +1,20 @@
+{
+  "design": "Martina & Federico · Botánica Salvia · Uruguay · V23",
+  "couple": "Martina & Federico",
+  "date": "2026-11-22T19:00:00",
+  "revision": "v23",
+  "files": [
+    "index.html",
+    "style.css",
+    "script.js",
+    "README.md",
+    "assets/leaf_tl.png",
+    "assets/leaf_top.png",
+    "assets/leaf_br.png",
+    "assets/leaf_bottom.png",
+    "assets/church.png",
+    "assets/paper_texture.jpg",
+    "assets/gift_box_animated.svg",
+    "assets/wedding-music.mp3"
+  ]
+}

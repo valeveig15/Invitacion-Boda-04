@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 150" role="img" aria-label="Caja de regalo que se abre">
+<style>
+  .line{fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+  .soft{fill:none;stroke:#fff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;opacity:.92}
+  .lid{transform-origin:80px 57px;animation:lid 4.8s ease-in-out .7s infinite}
+  .bow{transform-origin:80px 40px;animation:bow 4.8s ease-in-out .7s infinite}
+  .heart{fill:#fff;transform-origin:80px 65px;opacity:0;animation:heart 4.8s ease-out .7s infinite}
+  .spark{fill:#fff;opacity:0;animation:spark 4.8s ease-out .7s infinite}
+  .s2{animation-delay:.9s}.s3{animation-delay:1.08s}
+  @keyframes lid{
+    0%,28%,82%,100%{transform:translateY(0) rotate(0deg)}
+    40%,66%{transform:translateY(-17px) rotate(-4deg)}
+  }
+  @keyframes bow{
+    0%,28%,82%,100%{transform:translateY(0) scale(1)}
+    40%,66%{transform:translateY(-17px) scale(1.04)}
+  }
+  @keyframes heart{
+    0%,34%,74%,100%{opacity:0;transform:translateY(13px) scale(.55)}
+    46%{opacity:1;transform:translateY(-12px) scale(1)}
+    63%{opacity:.88;transform:translateY(-22px) scale(.92)}
+  }
+  @keyframes spark{
+    0%,38%,70%,100%{opacity:0;transform:translateY(7px) scale(.55)}
+    48%{opacity:.95;transform:translateY(-8px) scale(1)}
+    62%{opacity:.25;transform:translateY(-17px) scale(.82)}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .lid,.bow,.heart,.spark{animation:none}
+    .heart,.spark{display:none}
+  }
+</style>
+<g class="box">
+  <rect class="line" x="31" y="65" width="98" height="64" rx="3"/>
+  <path class="line" d="M80 65v64"/>
+  <path class="soft" d="M31 86h98"/>
+</g>
+<g class="lid">
+  <rect class="line" x="24" y="53" width="112" height="25" rx="3"/>
+  <path class="line" d="M80 53v25"/>
+</g>
+<g class="bow">
+  <path class="line" d="M79 52C66 49 53 40 54 29c1-8 11-8 17-4 7 5 9 16 9 27Z"/>
+  <path class="line" d="M81 52c13-3 26-12 25-23-1-8-11-8-17-4-7 5-9 16-8 27Z"/>
+</g>
+<path class="heart" d="M80 72c-5-8-18-7-18 4 0 9 11 15 18 22 7-7 18-13 18-22 0-11-13-12-18-4Z"/>
+<circle class="spark s1" cx="48" cy="44" r="3"/>
+<circle class="spark s2" cx="118" cy="36" r="2.7"/>
+<path class="spark s3" d="M125 76h10M130 71v10" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+</svg>
